@@ -1,0 +1,223 @@
+[2025-03-23 00:09:56] 对战精灵自动战斗机器人已初始化
+[2025-03-23 00:09:56] 警告：以下模板文件不存在，需要创建：
+[2025-03-23 00:09:56]   - battle_button.png
+[2025-03-23 00:09:56]   - confirm_battle.png
+[2025-03-23 00:09:56]   - victory_screen.png
+[2025-03-23 00:09:56]   - defeat_screen.png
+[2025-03-23 00:09:56]   - ok_button.png
+[2025-03-23 00:09:56]   - card_slot_1.png
+[2025-03-23 00:09:56]   - card_slot_2.png
+[2025-03-23 00:09:56]   - card_slot_3.png
+[2025-03-23 00:09:56]   - card_slot_4.png
+[2025-03-23 00:09:56] 请使用save_template方法创建这些模板
+[2025-03-23 00:10:06] === 创建模板指南 ===
+[2025-03-23 00:10:06] 1. 打开游戏并进入主界面
+[2025-03-23 00:10:06] 2. 使用以下命令创建对战按钮模板:
+[2025-03-23 00:10:06]    bot.save_template((x, y, width, height), 'battle_button.png')
+[2025-03-23 00:10:06]    其中(x, y, width, height)是对战按钮的屏幕坐标和尺寸
+[2025-03-23 00:10:06] 3. 对其他必要元素重复此过程
+[2025-03-23 00:10:06] 4. 完成所有模板后，可以开始使用自动战斗功能
+[2025-03-23 00:11:56] 对战精灵自动战斗机器人已初始化
+[2025-03-23 00:11:56] 警告：以下模板文件不存在，需要创建：
+[2025-03-23 00:11:56]   - battle_button.png
+[2025-03-23 00:11:56]   - confirm_battle.png
+[2025-03-23 00:11:56]   - victory_screen.png
+[2025-03-23 00:11:56]   - defeat_screen.png
+[2025-03-23 00:11:56]   - ok_button.png
+[2025-03-23 00:11:56]   - card_slot_1.png
+[2025-03-23 00:11:56]   - card_slot_2.png
+[2025-03-23 00:11:56]   - card_slot_3.png
+[2025-03-23 00:11:56]   - card_slot_4.png
+[2025-03-23 00:11:56] 请使用save_template方法创建这些模板
+[2025-03-23 00:11:57] === 创建模板指南 ===
+[2025-03-23 00:11:57] 1. 打开游戏并进入主界面
+[2025-03-23 00:11:57] 2. 使用以下命令创建对战按钮模板:
+[2025-03-23 00:11:57]    bot.save_template((x, y, width, height), 'battle_button.png')
+[2025-03-23 00:11:57]    其中(x, y, width, height)是对战按钮的屏幕坐标和尺寸
+[2025-03-23 00:11:57] 3. 对其他必要元素重复此过程
+[2025-03-23 00:11:57] 4. 完成所有模板后，可以开始使用自动战斗功能
+[2025-03-23 00:12:16] 对战精灵自动战斗机器人已初始化
+[2025-03-23 00:12:16] 警告：以下模板文件不存在，需要创建：
+[2025-03-23 00:12:16]   - battle_button.png
+[2025-03-23 00:12:16]   - confirm_battle.png
+[2025-03-23 00:12:16]   - victory_screen.png
+[2025-03-23 00:12:16]   - defeat_screen.png
+[2025-03-23 00:12:16]   - ok_button.png
+[2025-03-23 00:12:16]   - card_slot_1.png
+[2025-03-23 00:12:16]   - card_slot_2.png
+[2025-03-23 00:12:16]   - card_slot_3.png
+[2025-03-23 00:12:16]   - card_slot_4.png
+[2025-03-23 00:12:16] 请使用save_template方法创建这些模板
+[2025-03-23 00:12:18] === 创建模板指南 ===
+[2025-03-23 00:12:18] 1. 打开游戏并进入主界面
+[2025-03-23 00:12:18] 2. 使用以下命令创建对战按钮模板:
+[2025-03-23 00:12:18]    bot.save_template((x, y, width, height), 'battle_button.png')
+[2025-03-23 00:12:18]    其中(x, y, width, height)是对战按钮的屏幕坐标和尺寸
+[2025-03-23 00:12:18] 3. 对其他必要元素重复此过程
+[2025-03-23 00:12:18] 4. 完成所有模板后，可以开始使用自动战斗功能
+[2025-03-23 00:12:34] 保存模板 battle_button.png 从区域 (305, 956, 211, 87)
+[2025-03-23 00:12:50] 对战精灵自动战斗机器人已初始化
+[2025-03-23 00:12:50] 警告：以下模板文件不存在，需要创建：
+[2025-03-23 00:12:50]   - confirm_battle.png
+[2025-03-23 00:12:50]   - victory_screen.png
+[2025-03-23 00:12:50]   - defeat_screen.png
+[2025-03-23 00:12:50]   - ok_button.png
+[2025-03-23 00:12:50]   - card_slot_1.png
+[2025-03-23 00:12:50]   - card_slot_2.png
+[2025-03-23 00:12:50]   - card_slot_3.png
+[2025-03-23 00:12:50]   - card_slot_4.png
+[2025-03-23 00:12:50] 请使用save_template方法创建这些模板
+[2025-03-23 00:12:51] === 创建模板指南 ===
+[2025-03-23 00:12:51] 1. 打开游戏并进入主界面
+[2025-03-23 00:12:51] 2. 使用以下命令创建对战按钮模板:
+[2025-03-23 00:12:51]    bot.save_template((x, y, width, height), 'battle_button.png')
+[2025-03-23 00:12:51]    其中(x, y, width, height)是对战按钮的屏幕坐标和尺寸
+[2025-03-23 00:12:51] 3. 对其他必要元素重复此过程
+[2025-03-23 00:12:51] 4. 完成所有模板后，可以开始使用自动战斗功能
+[2025-03-23 00:13:03] 保存模板 battle_button.png 从区域 (306, 955, 211, 84)
+[2025-03-23 07:11:39] 对战精灵自动战斗机器人已初始化
+[2025-03-23 07:11:39] 警告：以下模板文件不存在，需要创建：
+[2025-03-23 07:11:39]   - confirm_battle.png
+[2025-03-23 07:11:39]   - victory_screen.png
+[2025-03-23 07:11:39]   - defeat_screen.png
+[2025-03-23 07:11:39]   - ok_button.png
+[2025-03-23 07:11:39]   - card_slot_1.png
+[2025-03-23 07:11:39]   - card_slot_2.png
+[2025-03-23 07:11:39]   - card_slot_3.png
+[2025-03-23 07:11:39]   - card_slot_4.png
+[2025-03-23 07:11:39] 请使用save_template方法创建这些模板
+[2025-03-23 07:11:43] === 创建模板指南 ===
+[2025-03-23 07:11:43] 1. 打开游戏并进入主界面
+[2025-03-23 07:11:43] 2. 使用以下命令创建对战按钮模板:
+[2025-03-23 07:11:43]    bot.save_template((x, y, width, height), 'battle_button.png')
+[2025-03-23 07:11:43]    其中(x, y, width, height)是对战按钮的屏幕坐标和尺寸
+[2025-03-23 07:11:43] 3. 对其他必要元素重复此过程
+[2025-03-23 07:11:43] 4. 完成所有模板后，可以开始使用自动战斗功能
+[2025-03-23 07:12:09] 保存模板 battle.png 从区域 (163, 989, 213, 89)
+[2025-03-23 07:12:39] 对战精灵自动战斗机器人已初始化
+[2025-03-23 07:12:39] 警告：以下模板文件不存在，需要创建：
+[2025-03-23 07:12:39]   - confirm_battle.png
+[2025-03-23 07:12:39]   - victory_screen.png
+[2025-03-23 07:12:39]   - defeat_screen.png
+[2025-03-23 07:12:39]   - ok_button.png
+[2025-03-23 07:12:39]   - card_slot_1.png
+[2025-03-23 07:12:39]   - card_slot_2.png
+[2025-03-23 07:12:39]   - card_slot_3.png
+[2025-03-23 07:12:39]   - card_slot_4.png
+[2025-03-23 07:12:39] 请使用save_template方法创建这些模板
+[2025-03-23 07:12:40] === 创建模板指南 ===
+[2025-03-23 07:12:40] 1. 打开游戏并进入主界面
+[2025-03-23 07:12:40] 2. 使用以下命令创建对战按钮模板:
+[2025-03-23 07:12:40]    bot.save_template((x, y, width, height), 'battle_button.png')
+[2025-03-23 07:12:40]    其中(x, y, width, height)是对战按钮的屏幕坐标和尺寸
+[2025-03-23 07:12:40] 3. 对其他必要元素重复此过程
+[2025-03-23 07:12:40] 4. 完成所有模板后，可以开始使用自动战斗功能
+[2025-03-23 07:12:51] 保存模板 battle.png 从区域 (158, 986, 220, 93)
+[2025-03-23 11:33:34] 对战精灵自动战斗机器人已初始化
+[2025-03-23 11:33:37] === 创建模板指南 ===
+[2025-03-23 11:33:37] 1. 打开游戏并进入主界面
+[2025-03-23 11:33:37] 2. 使用以下命令创建对战按钮模板:
+[2025-03-23 11:33:37]    bot.save_template((x, y, width, height), 'battle_button.png')
+[2025-03-23 11:33:37]    其中(x, y, width, height)是对战按钮的屏幕坐标和尺寸
+[2025-03-23 11:33:37] 3. 对其他必要元素重复此过程
+[2025-03-23 11:33:37] 4. 完成所有模板后，可以开始使用自动战斗功能
+[2025-03-23 11:33:51] 保存模板 battle.png 从区域 (176, 1032, 215, 89)
+[2025-03-23 11:34:03] 开始自动战斗循环，计划进行 3 次战斗
+[2025-03-23 11:34:03] 开始第 1 次战斗
+[2025-03-23 11:34:03] 找到模板 battle_button.png 在位置 (279, 1077) 置信度: 0.99
+[2025-03-23 11:34:03] 找到模板 battle_button.png 在位置 (279, 1077) 置信度: 0.99
+[2025-03-23 11:34:04] 点击位置: (275, 1076)
+[2025-03-23 11:34:05] 无法加载模板图像: D:\workspace\autogame\templates\confirm_battle.png
+[2025-03-23 11:34:05] 无法点击：位置为None
+[2025-03-23 11:34:05] 无法找到确认对战按钮
+[2025-03-23 11:34:05] 无法开始战斗，等待后重试
+[2025-03-23 11:34:08] 开始第 1 次战斗
+[2025-03-23 11:34:08] 未找到模板 battle_button.png (最高置信度: 0.29)
+[2025-03-23 11:34:08] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:08] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:08] 已经在战斗中
+[2025-03-23 11:34:10] 当前能量: 10
+[2025-03-23 11:34:10] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_1.png
+[2025-03-23 11:34:10] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_2.png
+[2025-03-23 11:34:10] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_3.png
+[2025-03-23 11:34:10] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_4.png
+[2025-03-23 11:34:10] 找不到索引为1的卡牌
+[2025-03-23 11:34:10] 等待2.2秒后继续操作
+[2025-03-23 11:34:13] 未找到模板 battle_button.png (最高置信度: 0.19)
+[2025-03-23 11:34:13] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:13] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:14] 未找到模板 battle_button.png (最高置信度: 0.20)
+[2025-03-23 11:34:14] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:15] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:16] 未找到模板 battle_button.png (最高置信度: 0.20)
+[2025-03-23 11:34:16] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:16] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:17] 未找到模板 battle_button.png (最高置信度: 0.20)
+[2025-03-23 11:34:17] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:17] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:19] 未找到模板 battle_button.png (最高置信度: 0.20)
+[2025-03-23 11:34:19] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:19] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:20] 未找到模板 battle_button.png (最高置信度: 0.20)
+[2025-03-23 11:34:20] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:20] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:22] 未找到模板 battle_button.png (最高置信度: 0.20)
+[2025-03-23 11:34:22] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:22] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:23] 等待战斗结果超时
+[2025-03-23 11:34:23] 战斗结果: 未知
+[2025-03-23 11:34:23] 完成第 1 次战斗，总计划 3 次
+[2025-03-23 11:34:23] 等待 3 秒后开始下一次战斗
+[2025-03-23 11:34:26] 开始第 2 次战斗
+[2025-03-23 11:34:26] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:26] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:26] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:26] 已经在战斗中
+[2025-03-23 11:34:28] 当前能量: 10
+[2025-03-23 11:34:28] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_1.png
+[2025-03-23 11:34:28] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_2.png
+[2025-03-23 11:34:28] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_3.png
+[2025-03-23 11:34:28] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_4.png
+[2025-03-23 11:34:28] 找不到索引为1的卡牌
+[2025-03-23 11:34:28] 等待1.5秒后继续操作
+[2025-03-23 11:34:30] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:30] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:30] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:31] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:32] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:32] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:33] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:33] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:33] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:34] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:34] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:34] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:36] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:36] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:36] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:37] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:37] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:37] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:38] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:38] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:39] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:40] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:40] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:40] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:41] 等待战斗结果超时
+[2025-03-23 11:34:41] 战斗结果: 未知
+[2025-03-23 11:34:41] 完成第 2 次战斗，总计划 3 次
+[2025-03-23 11:34:41] 等待 3 秒后开始下一次战斗
+[2025-03-23 11:34:44] 开始第 3 次战斗
+[2025-03-23 11:34:44] 未找到模板 battle_button.png (最高置信度: 0.22)
+[2025-03-23 11:34:44] 无法加载模板图像: D:\workspace\autogame\templates\victory_screen.png
+[2025-03-23 11:34:44] 无法加载模板图像: D:\workspace\autogame\templates\defeat_screen.png
+[2025-03-23 11:34:44] 已经在战斗中
+[2025-03-23 11:34:46] 当前能量: 9
+[2025-03-23 11:34:47] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_1.png
+[2025-03-23 11:34:47] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_2.png
+[2025-03-23 11:34:47] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_3.png
+[2025-03-23 11:34:47] 无法加载模板图像: D:\workspace\autogame\templates\card_slot_4.png
+[2025-03-23 11:34:47] 找不到索引为4的卡牌
+[2025-03-23 11:34:47] 等待2.7秒后继续操作
+[2025-03-23 11:34:49] 用户中断了自动战斗循环
