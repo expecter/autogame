@@ -46,13 +46,38 @@ def find_troops_main():
             print("请先创建必要的模板图像再使用此功能")
             return
     
+    # 询问用户是否要手动指定游戏窗口区域
+    print("\n是否要手动指定游戏窗口区域? (y/n)")
+    print("如果截图失败，建议选择'y'手动指定区域")
+    choice = input().strip().lower()
+    
+    region = None
+    if choice == 'y':
+        print("\n请将鼠标移动到游戏窗口的左上角，然后按Enter")
+        input()
+        start_x, start_y = pyautogui.position()
+        
+        print("现在将鼠标移动到游戏窗口的右下角，然后按Enter")
+        input()
+        end_x, end_y = pyautogui.position()
+        
+        width = end_x - start_x
+        height = end_y - start_y
+        
+        if width <= 0 or height <= 0:
+            print("错误: 选择的区域无效，将使用全屏模式")
+        else:
+            region = (start_x, start_y, width, height)
+            print(f"已设置游戏窗口区域: {region}")
+    
     # 创建AutoGame实例
-    auto_game = AutoGame(confidence=0.7)
+    auto_game = AutoGame(confidence=0.7, region=region)
     
     # 开始寻找野怪
     print("\n准备开始寻找野怪...")
     print("请在5秒内切换到游戏窗口...")
     for i in range(5, 0, -1):
+        print(f"{i}...")
         time.sleep(1)
     
     # 询问用户要寻找的野怪等级
@@ -205,17 +230,46 @@ def spiral_search(auto_game, target_templates, max_iterations=50):
     
     drag_distance = 300  # 每次拖动的像素距离
     
+    # 记录连续截图失败次数
+    consecutive_failures = 0
+    max_consecutive_failures = 3
+    
     for iteration in range(1, max_iterations + 1):
         print(f"搜索次数: {iteration}/{max_iterations}")
         
         # 检查当前屏幕是否有目标
+        template_found = False
         for template in target_templates:
-            position = auto_game.find_template(template, confidence=0.7)
-            if position:
-                print(f"找到目标: {template} 在位置 {position}")
-                # 点击目标
-                auto_game.click(position)
-                return True
+            try:
+                position = auto_game.find_template(template, confidence=0.7)
+                if position:
+                    print(f"找到目标: {template} 在位置 {position}")
+                    # 点击目标
+                    auto_game.click(position)
+                    return True
+                template_found = True  # 至少一个模板搜索成功（即使没找到匹配）
+            except Exception as e:
+                print(f"搜索模板 {template} 时出错: {str(e)}")
+        
+        # 如果所有模板搜索都失败（可能是截图问题）
+        if not template_found:
+            consecutive_failures += 1
+            print(f"警告: 连续 {consecutive_failures} 次截图或搜索失败")
+            
+            if consecutive_failures >= max_consecutive_failures:
+                print("连续多次截图失败，请检查游戏窗口是否可见或尝试重新启动程序")
+                print("是否继续尝试? (y/n)")
+                choice = input().strip().lower()
+                if choice != 'y':
+                    print("用户选择终止搜索")
+                    return False
+                consecutive_failures = 0  # 重置失败计数
+            
+            # 短暂暂停后继续
+            print("暂停2秒后继续...")
+            time.sleep(2)
+        else:
+            consecutive_failures = 0  # 重置连续失败计数
         
         # 确定当前拖动方向
         current_direction = directions[direction_index]

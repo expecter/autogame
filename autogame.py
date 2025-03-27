@@ -46,10 +46,25 @@ class AutoGame:
     def take_screenshot(self):
         """
         获取屏幕截图
-        :return: 屏幕截图的numpy数组
+        :return: 屏幕截图的numpy数组，如果截图失败则返回None
         """
-        self.screen = pyautogui.screenshot(region=self.region)
-        return cv2.cvtColor(np.array(self.screen), cv2.COLOR_RGB2BGR)
+        try:
+            self.screen = pyautogui.screenshot(region=self.region)
+            return cv2.cvtColor(np.array(self.screen), cv2.COLOR_RGB2BGR)
+        except Exception as e:
+            self.log(f"截图失败: {str(e)}")
+            self.log("尝试使用备用截图方法...")
+            try:
+                # 备用方法：使用PIL的ImageGrab直接截图
+                from PIL import ImageGrab
+                if self.region:
+                    self.screen = ImageGrab.grab(bbox=self.region)
+                else:
+                    self.screen = ImageGrab.grab()
+                return cv2.cvtColor(np.array(self.screen), cv2.COLOR_RGB2BGR)
+            except Exception as e2:
+                self.log(f"备用截图方法也失败: {str(e2)}")
+                return None
     
     def find_template(self, template_name, confidence=None):
         """
@@ -67,6 +82,10 @@ class AutoGame:
             return None
         
         screen = self.take_screenshot()
+        if screen is None:
+            self.log("无法获取屏幕截图，无法进行模板匹配")
+            return None
+            
         template = cv2.imread(template_path)
         
         # 确保模板和屏幕截图都已正确加载
@@ -75,19 +94,23 @@ class AutoGame:
             return None
         
         # 使用OpenCV的模板匹配
-        result = cv2.matchTemplate(screen, template, cv2.TM_CCOEFF_NORMED)
-        min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
-        
-        if max_val >= confidence:
-            # 计算匹配区域的中心点
-            h, w = template.shape[:2]
-            center_x = max_loc[0] + w // 2
-            center_y = max_loc[1] + h // 2
+        try:
+            result = cv2.matchTemplate(screen, template, cv2.TM_CCOEFF_NORMED)
+            min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
             
-            self.log(f"找到模板 {template_name} 在位置 ({center_x}, {center_y}) 置信度: {max_val:.2f}")
-            return (center_x, center_y)
-        else:
-            self.log(f"未找到模板 {template_name} (最高置信度: {max_val:.2f})")
+            if max_val >= confidence:
+                # 计算匹配区域的中心点
+                h, w = template.shape[:2]
+                center_x = max_loc[0] + w // 2
+                center_y = max_loc[1] + h // 2
+                
+                self.log(f"找到模板 {template_name} 在位置 ({center_x}, {center_y}) 置信度: {max_val:.2f}")
+                return (center_x, center_y)
+            else:
+                self.log(f"未找到模板 {template_name} (最高置信度: {max_val:.2f})")
+                return None
+        except Exception as e:
+            self.log(f"模板匹配过程中出错: {str(e)}")
             return None
     
     def click(self, position, random_offset=5):
